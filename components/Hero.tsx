@@ -2,14 +2,17 @@
 
 import { motion } from "framer-motion";
 
-export default function Hero() {
+export default function HeroV2() {
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 relative overflow-hidden">
       {/* Animated background pattern */}
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='30' cy='30' r='1.5' fill='white'/%3E%3C/svg%3E")`,
-        }} />
+        <div 
+          className="absolute inset-0 animate-float" 
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='30' cy='30' r='1.5' fill='white' opacity='0.3'/%3E%3C/svg%3E")`,
+          }} 
+        />
       </div>
 
       <div className="container mx-auto px-6 text-center relative z-10">
@@ -18,7 +21,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-lg">
             Mehmet Yavuzatmaca
           </h1>
           <p className="text-2xl md:text-3xl mb-4 font-semibold">
@@ -64,7 +67,7 @@ export default function Hero() {
           </div>
 
           {/* Quick Links */}
-          <div className="flex gap-4 justify-center items-center text-sm opacity-75">
+          <div className="flex gap-4 justify-center items-center text-sm opacity-75 flex-wrap">
             <a
               href="https://github.com/yavuzatmaca"
               target="_blank"
@@ -72,6 +75,15 @@ export default function Hero() {
               className="hover:opacity-100 transition-opacity"
             >
               GitHub
+            </a>
+            <span>•</span>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-100 transition-opacity"
+            >
+              LinkedIn
             </a>
             <span>•</span>
             <a
