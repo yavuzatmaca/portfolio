@@ -16,7 +16,7 @@ export default function ContactV2() {
             Get In Touch
           </h2>
           <p className="text-slate-400 text-lg mb-12 max-w-2xl mx-auto">
-            I'm always open to new projects, collaborations, or just a friendly chat. 
+            I&apos;m always open to new projects, collaborations, or just a friendly chat. 
             Feel free to reach out!
           </p>
 
