@@ -25,14 +25,14 @@ export default function HeroV2() {
             Mehmet Yavuzatmaca
           </h1>
           <p className="text-2xl md:text-3xl mb-4 font-semibold">
-            Full-Stack Developer
+            Product Engineer & Solutions Architect
           </p>
           <p className="text-lg md:text-xl mb-8 opacity-90">
-            15+ Years Experience • Building Modern Web Applications with AI Assistance
+            15+ Years Experience • Transforming complex business logic into scalable ERP & Fintech solutions
           </p>
           
           <div className="flex flex-wrap justify-center gap-3 mb-8">
-            {["React & Next.js", "Vue.js", "Laravel", "TypeScript"].map((tech, i) => (
+            {["React & Next.js", "Vue.js", "Laravel", "TypeScript", "Prisma ORM", "PostgreSQL", "System Architecture", "Vitest", "Zod Validation"].map((tech, i) => (
               <motion.span
                 key={tech}
                 initial={{ opacity: 0, y: 20 }}

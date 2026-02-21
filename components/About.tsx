@@ -32,8 +32,9 @@ export default function AboutV2() {
                 Background
               </h3>
               <p className="text-slate-300 leading-relaxed">
-                Full-stack developer with <strong className="text-white">15+ years</strong> of active development experience, 
-                coding since 2003. Specialized in building modern web applications with React, Next.js, Vue.js, and Laravel.
+                Coding since 2003 with <strong className="text-white">15+ years</strong> of active experience. 
+                Specialized in transforming complex business requirements into scalable web architectures and 
+                bridging robust backend logic with modern frontend experiences.
               </p>
             </motion.div>
 

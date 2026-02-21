@@ -24,21 +24,30 @@ const skillsData: SkillCategory[] = [
     ],
   },
   {
-    title: "Backend",
+    title: "Backend & Architecture",
     skills: [
       { name: "Laravel", level: 93 },
-      { name: "Node.js", level: 85 },
+      { name: "System Architecture", level: 90 },
       { name: "PHP", level: 90 },
       { name: "REST API", level: 94 },
     ],
   },
   {
-    title: "Database & Tools",
+    title: "Database & ORM",
     skills: [
-      { name: "MySQL / PostgreSQL", level: 91 },
-      { name: "Git & GitHub", level: 89 },
-      { name: "Prisma ORM", level: 87 },
-      { name: "Docker", level: 75 },
+      { name: "PostgreSQL", level: 92 },
+      { name: "Prisma ORM", level: 90 },
+      { name: "MySQL", level: 91 },
+      { name: "Database Design", level: 93 },
+    ],
+  },
+  {
+    title: "Testing & Validation",
+    skills: [
+      { name: "Vitest", level: 88 },
+      { name: "Zod Validation", level: 90 },
+      { name: "Property-Based Testing", level: 85 },
+      { name: "Code Quality", level: 95 },
     ],
   },
   {
@@ -104,7 +113,7 @@ export default function SkillsV2() {
           Skills
         </motion.h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 max-w-7xl mx-auto">
           {skillsData.map((category, categoryIndex) => (
             <motion.div
               key={category.title}
